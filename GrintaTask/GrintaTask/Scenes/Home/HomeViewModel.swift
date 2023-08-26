@@ -21,19 +21,19 @@ class HomeViewModel: HomeViewModelProtocol {
     
     func getMatcheList(completion: @escaping BlockWithMessageAndBool) {
         
-//        NetworkManager.shared.getMovieList(page: currentPage,
-//                                           completion: {[weak self] (result: Result<NetworkResponse<MovieModel>, NetworkError>, _) in
-//
-//            switch result {
-//            case .success(let data):
-//                print("data \(data)")
-//                self?.movieList.append(contentsOf: data.results ?? [])
-//                completion("sucess", true)
-//
-//            case .failure(let error):
-//                print("error \(error)")
-//                completion(error.errorMessage(), false)
-//            }
-//        })
+        NetworkManager.shared.getMatcheList(completion: {[weak self] (result: Result<NetworkResponse<MatcheModel>, NetworkError>, _) in
+            
+            switch result {
+            case .success(let data):
+                
+                print("data \(data)")
+                self?.matcheList = data.matches ?? []
+                completion("sucess", true)
+                
+            case .failure(let error):
+                print("error \(error)")
+                completion(error.errorMessage(), false)
+            }
+        })
     }
 }
