@@ -27,6 +27,18 @@
 		BF648EFC2A99FECB00EACD20 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648EFB2A99FECB00EACD20 /* TeamModel.swift */; };
 		BF648EFE2A99FEDB00EACD20 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648EFD2A99FEDB00EACD20 /* ScoreModel.swift */; };
 		BF648F002A99FEFC00EACD20 /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648EFF2A99FEFC00EACD20 /* PointModel.swift */; };
+		BF648F022A9A046500EACD20 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F012A9A046500EACD20 /* HomeViewModel.swift */; };
+		BF648F052A9A04D200EACD20 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F042A9A04D200EACD20 /* BaseViewController.swift */; };
+		BF648F072A9A04DC00EACD20 /* BaseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F062A9A04DC00EACD20 /* BaseViewModelProtocol.swift */; };
+		BF648F0A2A9A057B00EACD20 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F092A9A057B00EACD20 /* Loader.swift */; };
+		BF648F0D2A9A059200EACD20 /* LoaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F0C2A9A059200EACD20 /* LoaderProtocol.swift */; };
+		BF648F102A9A05BD00EACD20 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF648F0F2A9A05BD00EACD20 /* Colors.xcassets */; };
+		BF648F132A9A185D00EACD20 /* UIColor+app.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F122A9A185D00EACD20 /* UIColor+app.swift */; };
+		BF648F152A9A186700EACD20 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F142A9A186700EACD20 /* NSObject+Extension.swift */; };
+		BF648F192A9A25CF00EACD20 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F182A9A25CF00EACD20 /* Container.swift */; };
+		BF648F1C2A9A261100EACD20 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F1B2A9A261100EACD20 /* AppNavigationController.swift */; };
+		BF648F1F2A9A266200EACD20 /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F1E2A9A266200EACD20 /* AppManager.swift */; };
+		BF648F212A9A269900EACD20 /* SceneDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F202A9A269900EACD20 /* SceneDelegate+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +70,18 @@
 		BF648EFB2A99FECB00EACD20 /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
 		BF648EFD2A99FEDB00EACD20 /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		BF648EFF2A99FEFC00EACD20 /* PointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointModel.swift; sourceTree = "<group>"; };
+		BF648F012A9A046500EACD20 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BF648F042A9A04D200EACD20 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BF648F062A9A04DC00EACD20 /* BaseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelProtocol.swift; sourceTree = "<group>"; };
+		BF648F092A9A057B00EACD20 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		BF648F0C2A9A059200EACD20 /* LoaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderProtocol.swift; sourceTree = "<group>"; };
+		BF648F0F2A9A05BD00EACD20 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		BF648F122A9A185D00EACD20 /* UIColor+app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+app.swift"; sourceTree = "<group>"; };
+		BF648F142A9A186700EACD20 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		BF648F182A9A25CF00EACD20 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		BF648F1B2A9A261100EACD20 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		BF648F1E2A9A266200EACD20 /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		BF648F202A9A269900EACD20 /* SceneDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Extension.swift"; sourceTree = "<group>"; };
 		E92BCEF6A9FB7EFA62212C23 /* Pods_GrintaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrintaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA370036943523F0926EBB77 /* Pods-GrintaTask.debug live.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrintaTask.debug live.xcconfig"; path = "Target Support Files/Pods-GrintaTask/Pods-GrintaTask.debug live.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,9 +142,14 @@
 			children = (
 				BF648ECA2A99E17A00EACD20 /* Info.plist */,
 				BF648ED52A99E60A00EACD20 /* AppDelegate+SceneDelegate */,
+				BF648F032A9A04C200EACD20 /* Base */,
 				BF648ED92A99E89100EACD20 /* NetworkServices */,
 				BF648EE32A99EBE200EACD20 /* Models */,
+				BF648F112A9A184800EACD20 /* Extensions */,
 				BF648ED72A99E62700EACD20 /* Resources */,
+				BF648F082A9A056200EACD20 /* Custom */,
+				BF648F172A9A25BA00EACD20 /* Service */,
+				BF648F1D2A9A265800EACD20 /* Utilities */,
 				BF648ED62A99E62500EACD20 /* StoryBoard */,
 				BF648ED02A99E5E600EACD20 /* Scenes */,
 			);
@@ -141,6 +170,7 @@
 				BF648EBC2A99E17900EACD20 /* AppDelegate.swift */,
 				BF648EDB2A99E9DD00EACD20 /* AppDelegate+Extension.swift */,
 				BF648EBE2A99E17900EACD20 /* SceneDelegate.swift */,
+				BF648F202A9A269900EACD20 /* SceneDelegate+Extension.swift */,
 			);
 			path = "AppDelegate+SceneDelegate";
 			sourceTree = "<group>";
@@ -156,6 +186,7 @@
 		BF648ED72A99E62700EACD20 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BF648F0E2A9A05B100EACD20 /* Colors */,
 				BF648EE72A99ECE400EACD20 /* Assets */,
 				BF648EE62A99ECE200EACD20 /* Configurations */,
 			);
@@ -168,6 +199,7 @@
 				BF648EF92A99F8B300EACD20 /* Cell */,
 				BF648ED12A99E5FC00EACD20 /* HomeViewController.swift */,
 				BF648ED22A99E5FC00EACD20 /* HomeViewController.xib */,
+				BF648F012A9A046500EACD20 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -246,6 +278,82 @@
 			path = "Matche Service";
 			sourceTree = "<group>";
 		};
+		BF648F032A9A04C200EACD20 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F042A9A04D200EACD20 /* BaseViewController.swift */,
+				BF648F062A9A04DC00EACD20 /* BaseViewModelProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BF648F082A9A056200EACD20 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F1A2A9A25EB00EACD20 /* AppNavigationController */,
+				BF648F0B2A9A057F00EACD20 /* Loader */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		BF648F0B2A9A057F00EACD20 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F092A9A057B00EACD20 /* Loader.swift */,
+				BF648F0C2A9A059200EACD20 /* LoaderProtocol.swift */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		BF648F0E2A9A05B100EACD20 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F0F2A9A05BD00EACD20 /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		BF648F112A9A184800EACD20 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F122A9A185D00EACD20 /* UIColor+app.swift */,
+				BF648F142A9A186700EACD20 /* NSObject+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BF648F162A9A25B500EACD20 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F182A9A25CF00EACD20 /* Container.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		BF648F172A9A25BA00EACD20 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F162A9A25B500EACD20 /* Container */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BF648F1A2A9A25EB00EACD20 /* AppNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F1B2A9A261100EACD20 /* AppNavigationController.swift */,
+			);
+			path = AppNavigationController;
+			sourceTree = "<group>";
+		};
+		BF648F1D2A9A265800EACD20 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F1E2A9A266200EACD20 /* AppManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -307,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF648EC92A99E17A00EACD20 /* LaunchScreen.storyboard in Resources */,
+				BF648F102A9A05BD00EACD20 /* Colors.xcassets in Resources */,
 				BF648EC62A99E17A00EACD20 /* Assets.xcassets in Resources */,
 				BF648ED42A99E5FC00EACD20 /* HomeViewController.xib in Resources */,
 			);
@@ -361,21 +470,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF648F022A9A046500EACD20 /* HomeViewModel.swift in Sources */,
+				BF648F212A9A269900EACD20 /* SceneDelegate+Extension.swift in Sources */,
 				BF648EFE2A99FEDB00EACD20 /* ScoreModel.swift in Sources */,
 				BF648EE22A99EBC800EACD20 /* NetworkDefaults.swift in Sources */,
+				BF648F152A9A186700EACD20 /* NSObject+Extension.swift in Sources */,
 				BF648EF12A99EFCE00EACD20 /* MatcheService.swift in Sources */,
 				BF648EE52A99EBF400EACD20 /* NetworkError.swift in Sources */,
+				BF648F052A9A04D200EACD20 /* BaseViewController.swift in Sources */,
 				BF648EBD2A99E17900EACD20 /* AppDelegate.swift in Sources */,
 				BF648EFC2A99FECB00EACD20 /* TeamModel.swift in Sources */,
+				BF648F1C2A9A261100EACD20 /* AppNavigationController.swift in Sources */,
 				BF648F002A99FEFC00EACD20 /* PointModel.swift in Sources */,
+				BF648F132A9A185D00EACD20 /* UIColor+app.swift in Sources */,
 				BF648EF32A99EFDA00EACD20 /* NetworkManager+Matche.swift in Sources */,
 				BF648EF62A99F4F800EACD20 /* MatcheModel.swift in Sources */,
+				BF648F192A9A25CF00EACD20 /* Container.swift in Sources */,
 				BF648EE02A99EBB100EACD20 /* NetworkManager+ParseResponse.swift in Sources */,
 				BF648EE92A99ED0B00EACD20 /* Environment.swift in Sources */,
+				BF648F072A9A04DC00EACD20 /* BaseViewModelProtocol.swift in Sources */,
+				BF648F0A2A9A057B00EACD20 /* Loader.swift in Sources */,
+				BF648F1F2A9A266200EACD20 /* AppManager.swift in Sources */,
 				BF648EBF2A99E17900EACD20 /* SceneDelegate.swift in Sources */,
 				BF648EDE2A99EA4F00EACD20 /* NetworkManager.swift in Sources */,
 				BF648EDC2A99E9DD00EACD20 /* AppDelegate+Extension.swift in Sources */,
 				BF648ED32A99E5FC00EACD20 /* HomeViewController.swift in Sources */,
+				BF648F0D2A9A059200EACD20 /* LoaderProtocol.swift in Sources */,
 				BF648EF82A99F51E00EACD20 /* NetworkResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
