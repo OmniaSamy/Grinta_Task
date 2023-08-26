@@ -1,0 +1,15 @@
+//
+//  Live.xcconfig
+//  GrintaTask
+//
+//  Created by Omnia on 26/08/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL = api.football-data.org
+API_KEY = 9933f34b7ff24bad9190e459e00bb742
+
+
+//https://api.football-data.org/v2/competitions/2021/matches

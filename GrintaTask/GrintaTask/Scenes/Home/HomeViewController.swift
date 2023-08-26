@@ -13,7 +13,23 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        callApi()
     }
 
 
+    func callApi() {
+        
+        NetworkManager.shared.getMatcheList(completion: {[weak self] (result: Result<NetworkResponse<MatcheModel>, NetworkError>, _) in
+            
+            switch result {
+            case .success(let data):
+                print("data \(data)")
+//                self?.movieList.append(contentsOf: data.results ?? [])
+                
+            case .failure(let error):
+                print("error \(error)")
+            }
+        })
+    }
 }
