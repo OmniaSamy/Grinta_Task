@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8F91FEC9917F9B16CB69A3A /* Pods_GrintaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92BCEF6A9FB7EFA62212C23 /* Pods_GrintaTask.framework */; };
 		BF648EBD2A99E17900EACD20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648EBC2A99E17900EACD20 /* AppDelegate.swift */; };
 		BF648EBF2A99E17900EACD20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648EBE2A99E17900EACD20 /* SceneDelegate.swift */; };
 		BF648EC62A99E17A00EACD20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF648EC52A99E17A00EACD20 /* Assets.xcassets */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54F2CC0B5A09BA9ED2260A60 /* Pods-GrintaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrintaTask.debug.xcconfig"; path = "Target Support Files/Pods-GrintaTask/Pods-GrintaTask.debug.xcconfig"; sourceTree = "<group>"; };
+		A48E462EA9FFFFCF3F3EB0CE /* Pods-GrintaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrintaTask.release.xcconfig"; path = "Target Support Files/Pods-GrintaTask/Pods-GrintaTask.release.xcconfig"; sourceTree = "<group>"; };
 		BF648EB92A99E17900EACD20 /* GrintaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrintaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF648EBC2A99E17900EACD20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF648EBE2A99E17900EACD20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		BF648ECA2A99E17A00EACD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF648ED12A99E5FC00EACD20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BF648ED22A99E5FC00EACD20 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E92BCEF6A9FB7EFA62212C23 /* Pods_GrintaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrintaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F91FEC9917F9B16CB69A3A /* Pods_GrintaTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		812DB55537E245848C8A60AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54F2CC0B5A09BA9ED2260A60 /* Pods-GrintaTask.debug.xcconfig */,
+				A48E462EA9FFFFCF3F3EB0CE /* Pods-GrintaTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B536AE70D6218136EE3DEB24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E92BCEF6A9FB7EFA62212C23 /* Pods_GrintaTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF648EB02A99E17900EACD20 = {
 			isa = PBXGroup;
 			children = (
 				BF648EBB2A99E17900EACD20 /* GrintaTask */,
 				BF648EBA2A99E17900EACD20 /* Products */,
+				812DB55537E245848C8A60AD /* Pods */,
+				B536AE70D6218136EE3DEB24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF648ECD2A99E17A00EACD20 /* Build configuration list for PBXNativeTarget "GrintaTask" */;
 			buildPhases = (
+				3F15151EF412C8F0D4A629F1 /* [CP] Check Pods Manifest.lock */,
 				BF648EB52A99E17900EACD20 /* Sources */,
 				BF648EB62A99E17900EACD20 /* Frameworks */,
 				BF648EB72A99E17900EACD20 /* Resources */,
+				45122641E6235B6E524EB2AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F15151EF412C8F0D4A629F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrintaTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45122641E6235B6E524EB2AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrintaTask/Pods-GrintaTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrintaTask/Pods-GrintaTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrintaTask/Pods-GrintaTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF648EB52A99E17900EACD20 /* Sources */ = {
@@ -314,6 +383,7 @@
 		};
 		BF648ECE2A99E17A00EACD20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54F2CC0B5A09BA9ED2260A60 /* Pods-GrintaTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -339,6 +409,7 @@
 		};
 		BF648ECF2A99E17A00EACD20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48E462EA9FFFFCF3F3EB0CE /* Pods-GrintaTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
