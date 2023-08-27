@@ -8,7 +8,6 @@ target 'GrintaTask' do
   # Pods for GrintaTask
 
   pod 'Moya'
-  pod 'AlamofireImage'
   pod 'SwiftMessages'
 
 end
