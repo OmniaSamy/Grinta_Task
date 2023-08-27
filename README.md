@@ -1,6 +1,6 @@
 # Grinta_Task
 
-### project structure 
+### Project Abstract 
 
  * structure:  MVVM
  * frameworks:
