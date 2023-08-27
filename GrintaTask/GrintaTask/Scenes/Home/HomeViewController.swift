@@ -38,6 +38,7 @@ extension HomeViewController {
     private func setUpScreenDesign() {
         
         matchesTableView.dataSource = self
+        matchesTableView.delegate = self
         matchesTableView.register(UINib(nibName: MatcheTableViewCell.className, bundle: nil),
                                  forCellReuseIdentifier: MatcheTableViewCell.className)
         
@@ -76,5 +77,12 @@ extension HomeViewController: UITableViewDataSource {
         guard let matche = viewModel?.matcheList[indexPath.row] else { return UITableViewCell() }
         cell.bind(matche: matche)
         return cell
+    }
+}
+
+extension HomeViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }
