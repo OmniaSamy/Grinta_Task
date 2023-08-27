@@ -22,4 +22,13 @@ class TimeDateFormat {
         let timeString = dateFormatter.string(from: newDate)
         return timeString
     }
+    
+    class func convertStringToDate(date: String) -> Date {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US")
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        let newDate = dateFormatter.date(from: date) ?? Date()
+        return newDate
+    }
 }

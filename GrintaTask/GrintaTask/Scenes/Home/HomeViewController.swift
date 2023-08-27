@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
-
+    
     // MARK: - IBOutlets
     @IBOutlet private weak var matchesTableView: UITableView!
     
@@ -16,12 +16,12 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         setUpScreenDesign()
         getMatcheList()
     }
-
+    
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -40,8 +40,9 @@ extension HomeViewController {
         matchesTableView.dataSource = self
         matchesTableView.delegate = self
         matchesTableView.register(UINib(nibName: MatcheTableViewCell.className, bundle: nil),
-                                 forCellReuseIdentifier: MatcheTableViewCell.className)
-        
+                                  forCellReuseIdentifier: MatcheTableViewCell.className)
+        matchesTableView.register(UINib(nibName: MatcheHeaderView.className, bundle: nil),
+                                  forHeaderFooterViewReuseIdentifier: MatcheHeaderView.className)
     }
     
     private func getMatcheList() {
@@ -65,8 +66,13 @@ extension HomeViewController {
 // MARK: - TableView DataSource
 extension HomeViewController: UITableViewDataSource {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return viewModel?.matcheListGroubed.count ?? 0
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel?.matcheList.count ?? 0
+        let dict = viewModel?.matcheListGroubed[section]
+        return dict?.matchlist?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -74,9 +80,24 @@ extension HomeViewController: UITableViewDataSource {
                                                        for: indexPath) as? MatcheTableViewCell else {
             return UITableViewCell()
         }
-        guard let matche = viewModel?.matcheList[indexPath.row] else { return UITableViewCell() }
+        guard let matche = viewModel?.matcheListGroubed[indexPath.section].matchlist?[indexPath.row] else { return UITableViewCell() }
         cell.bind(matche: matche)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        guard let header = tableView.dequeueReusableHeaderFooterView(
+            withIdentifier: MatcheHeaderView.className) as? MatcheHeaderView,
+              let headerDate = viewModel?.matcheListGroubed[section].date
+        else { return nil }
+        
+        header.bind(date: headerDate)
+        return header
     }
 }
 

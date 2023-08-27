@@ -42,6 +42,8 @@
 		BF648F242A9A341100EACD20 /* MatcheTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F222A9A341100EACD20 /* MatcheTableViewCell.swift */; };
 		BF648F252A9A341100EACD20 /* MatcheTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF648F232A9A341100EACD20 /* MatcheTableViewCell.xib */; };
 		BF648F292A9A7DC000EACD20 /* TimeDateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F282A9A7DC000EACD20 /* TimeDateFormat.swift */; };
+		BF648F2D2A9B3E8F00EACD20 /* MatcheHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF648F2C2A9B3E8F00EACD20 /* MatcheHeaderView.swift */; };
+		BF648F2F2A9B3E9800EACD20 /* MatcheHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF648F2E2A9B3E9800EACD20 /* MatcheHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		BF648F222A9A341100EACD20 /* MatcheTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcheTableViewCell.swift; sourceTree = "<group>"; };
 		BF648F232A9A341100EACD20 /* MatcheTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatcheTableViewCell.xib; sourceTree = "<group>"; };
 		BF648F282A9A7DC000EACD20 /* TimeDateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDateFormat.swift; sourceTree = "<group>"; };
+		BF648F2C2A9B3E8F00EACD20 /* MatcheHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatcheHeaderView.swift; sourceTree = "<group>"; };
+		BF648F2E2A9B3E9800EACD20 /* MatcheHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatcheHeaderView.xib; sourceTree = "<group>"; };
 		E92BCEF6A9FB7EFA62212C23 /* Pods_GrintaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrintaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA370036943523F0926EBB77 /* Pods-GrintaTask.debug live.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrintaTask.debug live.xcconfig"; path = "Target Support Files/Pods-GrintaTask/Pods-GrintaTask.debug live.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,6 +206,7 @@
 		BF648ED82A99E69700EACD20 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BF648F2B2A9B3E5800EACD20 /* Header */,
 				BF648EF92A99F8B300EACD20 /* Cell */,
 				BF648ED12A99E5FC00EACD20 /* HomeViewController.swift */,
 				BF648ED22A99E5FC00EACD20 /* HomeViewController.xib */,
@@ -371,6 +376,15 @@
 			path = Formatter;
 			sourceTree = "<group>";
 		};
+		BF648F2B2A9B3E5800EACD20 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				BF648F2C2A9B3E8F00EACD20 /* MatcheHeaderView.swift */,
+				BF648F2E2A9B3E9800EACD20 /* MatcheHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF648F252A9A341100EACD20 /* MatcheTableViewCell.xib in Resources */,
+				BF648F2F2A9B3E9800EACD20 /* MatcheHeaderView.xib in Resources */,
 				BF648EC92A99E17A00EACD20 /* LaunchScreen.storyboard in Resources */,
 				BF648F102A9A05BD00EACD20 /* Colors.xcassets in Resources */,
 				BF648EC62A99E17A00EACD20 /* Assets.xcassets in Resources */,
@@ -505,6 +520,7 @@
 				BF648F292A9A7DC000EACD20 /* TimeDateFormat.swift in Sources */,
 				BF648EF62A99F4F800EACD20 /* MatcheModel.swift in Sources */,
 				BF648F192A9A25CF00EACD20 /* Container.swift in Sources */,
+				BF648F2D2A9B3E8F00EACD20 /* MatcheHeaderView.swift in Sources */,
 				BF648EE02A99EBB100EACD20 /* NetworkManager+ParseResponse.swift in Sources */,
 				BF648EE92A99ED0B00EACD20 /* Environment.swift in Sources */,
 				BF648F072A9A04DC00EACD20 /* BaseViewModelProtocol.swift in Sources */,

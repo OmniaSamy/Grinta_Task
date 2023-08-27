@@ -25,6 +25,7 @@ class MatcheTableViewCell: UITableViewCell {
     }
 
     func bind(matche: MatcheModel) {
+        
         matcheResultView.isHidden = true
         matcheTimeView.isHidden = true
         homeTeamLabel.text = matche.homeTeam?.name
